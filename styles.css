@@ -1,0 +1,224 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Navigation */
+nav {
+  background: #24292e;
+  padding: 1em 0;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #fff;
+  margin-left: 1.5em;
+  font-weight: 600;
+  font-size: 1rem;
+}
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Header */
+header {
+  background: #0077cc;
+  color: white;
+  padding: 4em 0 3em 0;
+}
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5em;
+}
+header p {
+  font-size: 1.2rem;
+  max-width: 400px;
+}
+header img {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Sections */
+.section {
+  padding: 3em 0;
+  background: white;
+  margin-bottom: 2em;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+h2 {
+  margin-bottom: 0.5em;
+  color: #0077cc;
+  font-weight: 700;
+  border-bottom: 3px solid #0077cc;
+  padding-bottom: 0.2em;
+}
+
+/* Projects */
+.project {
+  margin-top: 2em;
+}
+.project h3 {
+  margin-bottom: 0.3em;
+  color: #444;
+}
+
+/* To-Do List */
+.todo-controls {
+  display: flex;
+  margin-bottom: 1em;
+}
+.todo-controls input[type="text"] {
+  flex: 1;
+  padding: 0.7em;
+  border: 2px solid #0077cc;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+}
+.todo-controls button {
+  padding: 0.7em 1.5em;
+  background: #0077cc;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background 0.3s ease;
+}
+.todo-controls button:hover {
+  background: #005fa3;
+}
+.task-list {
+  list-style: none;
+  padding-left: 0;
+}
+.task-list li {
+  background: #e6f0fa;
+  padding: 0.8em 1em;
+  margin-bottom: 0.5em;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Product Listing */
+.filters {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.filters select {
+  flex: 1;
+  padding: 0.6em;
+  font-size: 1rem;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  cursor: pointer;
+  background: white;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
+}
+.product {
+  background: #f0f7ff;
+  border: 1px solid #0077cc;
+  border-radius: 10px;
+  padding: 1em;
+  width: 220px;
+  box-shadow: 0 3px 8px rgba(0, 119, 204, 0.15);
+  transition: transform 0.2s ease;
+}
+.product:hover {
+  transform: translateY(-6px);
+}
+.product strong {
+  display: block;
+  margin-bottom: 0.4em;
+  font-size: 1.1rem;
+  color: #004c80;
+}
+
+/* Contact */
+#contact a {
+  font-weight: 600;
+}
+.social-icons {
+  margin-top: 1em;
+}
+.social-icons a {
+  display: inline-block;
+  margin-right: 1em;
+}
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.social-icons a:hover img {
+  filter: none;
+}
+
+/* Footer */
+footer {
+  background: #24292e;
+  color: #ccc;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9rem;
+  margin-top: 2em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  header img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 2em;
+  }
+  .filters {
+    flex-direction: column;
+  }
+  .product-grid {
+    justify-content: center;
+  }
+}

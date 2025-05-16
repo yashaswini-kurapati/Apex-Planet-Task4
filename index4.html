@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio with Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="#about" class="logo">Yashaswini</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container header-content">
+      <div>
+        <h1>Hello, I'm Yashaswini</h1>
+        <p>A passionate Web Developer creating beautiful and functional websites.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Developer at work" />
+    </div>
+  </header>
+
+  <section id="about" class="container section">
+    <h2>About Me</h2>
+    <p>
+      I specialize in creating professional, responsive, and interactive web experiences combining HTML, CSS, and JavaScript.
+      Check out my projects below!
+    </p>
+  </section>
+
+  <section id="projects" class="container section">
+    <h2>Projects</h2>
+
+    <div class="project todo">
+      <h3>To-Do List</h3>
+      <p>Keep track of your tasks — your list is saved in your browser.</p>
+      <div class="todo-controls">
+        <input type="text" id="taskInput" placeholder="Add a task" />
+        <button id="addTaskBtn">Add</button>
+      </div>
+      <ul id="taskList" class="task-list"></ul>
+    </div>
+
+    <div class="project product-listing">
+      <h3>Product Listing</h3>
+      <p>Filter products by category and sort by price.</p>
+      <div class="filters">
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+        </select>
+        <select id="sortPrice">
+          <option value="default">Sort by Price</option>
+          <option value="asc">Low to High</option>
+          <option value="desc">High to Low</option>
+        </select>
+      </div>
+      <div id="productList" class="product-grid"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="container section">
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:yashu@email.com">example@email.com</a></p>
+    <div class="social-icons">
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="https://cdn-icons-png.flaticon.com/24/25/25231.png" alt="GitHub" />
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn" />
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Yashaswini. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
